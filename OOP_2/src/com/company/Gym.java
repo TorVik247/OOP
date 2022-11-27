@@ -13,9 +13,14 @@ public class Gym {
         this.time = time;
     }
 
+    public void gk(double a ) {
+        a = a+20;
+        System.out.println(a);
+    }
 
 
-   void skudka(){
+
+   void skudkaGym(){
         if (grn>249){
             q =(int) Math.round(Math.random() * 5);
             if (q==0){
@@ -29,6 +34,9 @@ public class Gym {
             System.out.println("Ціна тарифу: "+grn);
             System.out.println("Вам не вистачає до знижки ще "+(250-grn)+" грн");
         }
+   }
+   void  skudkaGym(int i){
+       System.out.println("якщо ти жмеш менше " + i + "кг то ти тюбик");
    }
 
     void cafe(){

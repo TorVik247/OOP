@@ -8,6 +8,7 @@ public class Main {
         persona1.setPer1("Володя");
         persona1.setPer2("Елізавета");
         persona1.setPer3("Роман Романович");
+
         Gym taruf0 = new Gym("Одноразовий",1,35,1);
         Gym taruf1 = new Gym("Малий",5,125,30);
         Gym taruf2 = new Gym("Середній",13,250,30);
@@ -20,7 +21,7 @@ public class Main {
         System.out.println("Тариф: "+taruf0.taruf);
         System.out.println();
         System.out.println("Кіл. тренувань: "+taruf0.cil);
-        taruf0.skudka();
+        taruf0.skudkaGym();
         taruf0.cafe();
 
         System.out.println();
@@ -29,7 +30,7 @@ public class Main {
         System.out.println("Тариф: "+taruf1.taruf);
         System.out.println();
         System.out.println("Кіл. тренувань: "+taruf1.cil);
-        taruf1.skudka();
+        taruf1.skudkaGym();
         taruf1.cafe();
 
         System.out.println();
@@ -38,7 +39,7 @@ public class Main {
         System.out.println("Тариф: "+taruf2.taruf);
         System.out.println();
         System.out.println("Кіл. тренувань: "+taruf2.cil);
-        taruf2.skudka();
+        taruf2.skudkaGym();
 
         System.out.println();
         System.out.println("⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻");
@@ -46,7 +47,7 @@ public class Main {
         System.out.println("Тариф: "+taruf3.taruf);
         System.out.println();
         System.out.println("Кіл. тренувань: "+taruf3.cil);
-        taruf3.skudka();
+        taruf3.skudkaGym();
         System.out.println("");
         //кафе муччі
         System.out.println("--------------Кафе Муччі--------------");
@@ -54,12 +55,18 @@ public class Main {
         cafe.cafe();
         System.out.println("");
         cafe.skudkaCafe();
+        System.out.println("");
         //персонал
         System.out.println("-------------Персонал-----------------");;
         persona1.bio();
         System.out.println("");
         persona1.top(cafe);
-
+        System.out.println();
+        System.out.println("Тобі потрібно присісти");
+        persona1.gk(1);
+        System.out.println("або");
+        taruf1.gk(1.3); //Перевизначити
+        taruf0.skudkaGym(100); //перевантажити
 
     }
 }

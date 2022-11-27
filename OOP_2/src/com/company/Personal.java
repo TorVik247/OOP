@@ -21,6 +21,12 @@ public class Personal {
         this.per3 = per3;
     }
 
+    public void gk(int a ) {
+        a = a+20;
+        System.out.println(a);
+    }
+
+
 
     void bio(){
         System.out.println("Це "+per1+" він фітнес тренер залу ,йому 34");
@@ -30,7 +36,6 @@ public class Personal {
     int top(Menu qq){
         int q1= qq.ran;
         System.out.print("Рекомендою взяти тобі сьогодні "+item[q1]);
-        System.out.println(" "+per1);
         return q1;
         }
     }
