@@ -67,6 +67,8 @@ public class Main {
         System.out.println("або");
         taruf1.gk(1.3); //Перевизначити
         taruf0.skudkaGym(100); //перевантажити
-
+        System.out.print("в зал потрібно ходити min ");
+        taruf0.recursive(0);// рекурсивного методу
+        System.out.println("разів за місяць");
     }
 }

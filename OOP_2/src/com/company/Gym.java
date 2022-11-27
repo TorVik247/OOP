@@ -17,6 +17,14 @@ public class Gym {
         a = a+20;
         System.out.println(a);
     }
+    void recursive(int n){
+        if(n>12){
+            System.out.println(n);
+            return;
+        }
+        recursive(n+1);
+    }
+
 
 
 
@@ -35,6 +43,7 @@ public class Gym {
             System.out.println("Вам не вистачає до знижки ще "+(250-grn)+" грн");
         }
    }
+
    void  skudkaGym(int i){
        System.out.println("якщо ти жмеш менше " + i + "кг то ти тюбик");
    }
