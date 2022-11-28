@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class Menu {
+class Menu {
     String[] item = new String[]{"Протеїновий батончик", "Енергетик 0,5л", "Вода 0,5л", "Протеїновий коктель", "Кофе"};
     int[] grn1 = new int[]{15, 25, 10, 35, 15};
     int ran = (int) Math.round(Math.random() * 4),ram = (int) Math.round(Math.random() * 4),ranm ,wert;

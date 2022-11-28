@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class Personal {
+class Personal {
     private String per1;
     private String per2;
     private String per3;
@@ -9,19 +9,19 @@ public class Personal {
     int[] grn1 = new int[]{15, 25, 10, 35, 15};
 
 
-    public void setPer1(String per1) {
+    void setPer1(String per1) {
         this.per1 = per1;
     }
 
-    public void setPer2(String per2) {
+    void setPer2(String per2) {
         this.per2 = per2;
     }
 
-    public void setPer3(String per3) {
+    void setPer3(String per3) {
         this.per3 = per3;
     }
 
-    public void gk(int a ) {
+    void gk(int a ) {
         a = a+20;
         System.out.println(a);
     }

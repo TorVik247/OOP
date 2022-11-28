@@ -1,7 +1,5 @@
 package com.company;
-
-
-public class Gym {
+class Gym {
     String taruf;
     double grn;
     int cil,time,q;
@@ -13,7 +11,7 @@ public class Gym {
         this.time = time;
     }
 
-    public void gk(double a ) {
+    void gk(double a ) {
         a = a+20;
         System.out.println(a);
     }
