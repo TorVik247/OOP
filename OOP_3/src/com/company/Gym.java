@@ -43,7 +43,7 @@ class Gym {
    }
 
    void  skudkaGym(int i){
-       System.out.println("якщо ти жмеш менше " + i + "кг то ти тюбик");
+       System.out.println("якщо ти жмеш менше " + i + "кг то ти нінащо не здатний невдаха");
    }
 
     void cafe(){

@@ -62,10 +62,12 @@ public class Main {
         System.out.println("");
         persona1.top(cafe);
         System.out.println();
-        System.out.println("Тобі потрібно присісти");
+        System.out.print("Тобі потрібно присісти ");
         persona1.gk(5);
-        System.out.println("або");
+        System.out.print("або ");
         taruf1.gk(7.5); //Перевизначити
+        System.out.print("також не заюбуваю про свою ціль ");
+        persona1.setgk((int) 7.5);
         taruf0.skudkaGym(100); //перевантажити
         System.out.print("в зал потрібно ходити min ");
         taruf0.recursive(0);// рекурсивного методу

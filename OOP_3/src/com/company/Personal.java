@@ -21,11 +21,17 @@ class Personal {
         this.per3 = per3;
     }
 
-    void gk(int a ) {
+    int gk(int a ) {
         a = a+20;
-        System.out.println(a);
+        System.out.print(a);
+        System.out.print(" kg ");
+        return a;
     }
-
+    public void setgk(int a){
+        a = (20+a)*2;
+        System.out.print(a);
+        System.out.println(" kg");
+    }
 
 
     void bio(){
