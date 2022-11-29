@@ -5,8 +5,8 @@ class Personal {
     private String per1;
     private String per2;
     private String per3;
-    String[] item = new String[]{"Протеїновий батончик", "Енергетик 0,5л", "Вода 0,5л", "Протеїновий коктель", "Кофе"};
-    int[] grn1 = new int[]{15, 25, 10, 35, 15};
+    private String[] item = new String[]{"Протеїновий батончик", "Енергетик 0,5л", "Вода 0,5л", "Протеїновий коктель", "Кофе"};
+    private int[] grn1 = new int[]{15, 25, 10, 35, 15};
 
 
     void setPer1(String per1) {
@@ -34,7 +34,7 @@ class Personal {
         System.out.println("А це їхній начальник "+per3+" він директор ,йому 56");
     }
     int top(Menu qq){
-        int q1= qq.ran;
+        int q1= qq.getran();
         System.out.print("Рекомендою взяти тобі сьогодні "+item[q1]);
         return q1;
         }

@@ -2,9 +2,9 @@ package com.company;
 
 
 class Menu {
-    String[] item = new String[]{"Протеїновий батончик", "Енергетик 0,5л", "Вода 0,5л", "Протеїновий коктель", "Кофе"};
-    int[] grn1 = new int[]{15, 25, 10, 35, 15};
-    int ran = (int) Math.round(Math.random() * 4),ram = (int) Math.round(Math.random() * 4),ranm ,wert;
+    private String[] item = new String[]{"Протеїновий батончик", "Енергетик 0,5л", "Вода 0,5л", "Протеїновий коктель", "Кофе"};
+    private int[] grn1 = new int[]{15, 25, 10, 35, 15};
+    private int ran = (int) Math.round(Math.random() * 4),ram = (int) Math.round(Math.random() * 4),ranm ,wert;
 
 
     //Товари і ціни в кафе
@@ -28,5 +28,9 @@ class Menu {
                 break;
             }
         }
+    }
+
+    public int getran(){
+        return ran;
     }
 }
