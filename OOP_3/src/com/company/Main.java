@@ -66,7 +66,7 @@ public class Main {
         persona1.gk(5);
         System.out.print("або ");
         taruf1.gk(7.5); //Перевизначити
-        System.out.print("також не заюбуваю про свою ціль ");
+        System.out.print("також не забувай про свою ціль ");
         persona1.setgk((int) 7.5);
         taruf0.skudkaGym(100); //перевантажити
         System.out.print("в зал потрібно ходити min ");
