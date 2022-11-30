@@ -10,7 +10,6 @@ class Personal {
     final int[] GRN1 = new int[]{15, 25, 10, 35, 15}; //final
 
 
-
     void setPer1(String per1) {
         this.per1 = per1;
     }
