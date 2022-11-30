@@ -18,35 +18,35 @@ public class Main {
 
         System.out.println("⸻⸻⸻ Фітнес клуб Гачі ⸺⸻⸻⸻");
         //1 тариф
-        System.out.println("Тариф: "+taruf0.taruf);
+        System.out.println("Тариф: "+taruf0.getTaruf());
         System.out.println();
-        System.out.println("Кіл. тренувань: "+taruf0.cil);
+        System.out.println("Кіл. тренувань: "+taruf0.getCil());
         taruf0.skudkaGym();
         taruf0.cafe();
 
         System.out.println();
         System.out.println("⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻");
         //2 тариф
-        System.out.println("Тариф: "+taruf1.taruf);
+        System.out.println("Тариф: "+taruf1.getTaruf());
         System.out.println();
-        System.out.println("Кіл. тренувань: "+taruf1.cil);
+        System.out.println("Кіл. тренувань: "+taruf1.getCil());
         taruf1.skudkaGym();
         taruf1.cafe();
 
         System.out.println();
         System.out.println("⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻");
         //3 тариф
-        System.out.println("Тариф: "+taruf2.taruf);
+        System.out.println("Тариф: "+taruf2.getTaruf());
         System.out.println();
-        System.out.println("Кіл. тренувань: "+taruf2.cil);
+        System.out.println("Кіл. тренувань: "+taruf2.getCil());
         taruf2.skudkaGym();
 
         System.out.println();
         System.out.println("⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻");
         //4 тариф
-        System.out.println("Тариф: "+taruf3.taruf);
+        System.out.println("Тариф: "+taruf3.getTaruf());
         System.out.println();
-        System.out.println("Кіл. тренувань: "+taruf3.cil);
+        System.out.println("Кіл. тренувань: "+taruf3.getCil());
         taruf3.skudkaGym();
         System.out.println("");
         //кафе муччі
@@ -62,10 +62,12 @@ public class Main {
         System.out.println("");
         persona1.top(cafe);
         System.out.println();
-        System.out.println("Тобі потрібно присісти");
+        System.out.print("Тобі потрібно присісти ");
         persona1.gk(5);
-        System.out.println("або");
+        System.out.print("або ");
         taruf1.gk(7.5); //Перевизначити
+        System.out.print("також не заюбуваю про свою ціль ");
+        persona1.setgk((int) 7.5);
         taruf0.skudkaGym(100); //перевантажити
         System.out.print("в зал потрібно ходити min ");
         taruf0.recursive(0);// рекурсивного методу

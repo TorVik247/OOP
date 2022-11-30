@@ -1,8 +1,8 @@
 package com.company;
 class Gym {
-    String taruf;
-    double grn;
-    int cil,time,q;
+    private String taruf;
+    private double grn;
+    private int cil,time,q;
 
     Gym(String taruf, int cil,double grn ,int time) {
         this.taruf = taruf;
@@ -43,10 +43,18 @@ class Gym {
    }
 
    void  skudkaGym(int i){
-       System.out.println("якщо ти жмеш менше " + i + "кг то ти тюбик");
+       System.out.println("якщо ти жмеш менше " + i + "кг то ти нінащо не здатний невдаха");
    }
 
     void cafe(){
         System.out.println("Зверніться до кафе щоб добрати цю суму грошей");
+    }
+
+    public String getTaruf(){
+        return taruf;
+    }
+
+    public int getCil() {
+        return cil;
     }
 }
