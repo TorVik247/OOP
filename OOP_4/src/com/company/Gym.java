@@ -17,14 +17,11 @@ class Gym {
     }
     void recursive(int n){
         if(n>12){
-            System.out.println(n);
+            System.out.print(n);
             return;
         }
         recursive(n+1);
     }
-
-
-
 
    void skudkaGym(){
         if (grn>249){

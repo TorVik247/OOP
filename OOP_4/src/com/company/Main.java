@@ -3,6 +3,7 @@ package com.company;
 
 public class Main {
 
+
     public static void main(String[] args) {
         Personal persona1 = new Personal();
         persona1.setPer1("Володя");
@@ -13,6 +14,7 @@ public class Main {
         Gym taruf1 = new Gym("Малий",5,125,30);
         Gym taruf2 = new Gym("Середній",13,250,30);
         Gym taruf3 = new Gym("Безліміт",100,500,30);
+        NonLogic.tru tr = new NonLogic.tru();
         Menu cafe = new Menu();
 
 
@@ -62,6 +64,8 @@ public class Main {
         System.out.println("");
         persona1.top(cafe);
         System.out.println();
+        System.out.println();
+
         System.out.print("Тобі потрібно присісти ");
         persona1.gk(5);
         System.out.print("або ");
@@ -69,8 +73,18 @@ public class Main {
         System.out.print("також не забувай про свою ціль ");
         persona1.setgk((int) 7.5);
         taruf0.skudkaGym(100); //перевантажити
+
+        System.out.println();
         System.out.print("в зал потрібно ходити min ");
         taruf0.recursive(0);// рекурсивного методу
-        System.out.println("разів за місяць");
+        System.out.print(" разів за місяць");
+        System.out.println("");
+        System.out.println();
+
+        tr.metraz();
+        System.out.println();
+        tr.mdva();
+        System.out.println();
+        tr.mettru();
     }
 }
