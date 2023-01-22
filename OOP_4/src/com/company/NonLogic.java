@@ -1,23 +1,33 @@
 package com.company;
 
 class NonLogic {
-    static public class raz {
-        void metraz () {
-            System.out.println("method one1 ");
-        }
+    private String Name;
+    private static double zarplata=50000;
+    NonLogic(String Name){
+        this.Name=Name;
     }
+    void metraz () {
+        System.out.print(Name+" ");
 
-    static public class dva extends raz {
+    }
+    public static class dva extends NonLogic {
+        dva(String Name) {
+            super(Name);
+        }
         void mdva () {
             metraz();
-            System.out.println("method two2 ");
+            System.out.println(zarplata+" грн");
         }
     }
 
-    static public class tru extends dva {
-        void mettru () {
+    public static class tru extends dva {
+        tru(String Name) {
+            super(Name);
+        }
+        public void mettru () {
+            zarplata=zarplata+20000;
             metraz();
-            System.out.println("method three3 ");
+            System.out.println(zarplata+" грн");
         }
     }
 }

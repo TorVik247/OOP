@@ -14,8 +14,13 @@ public class Main {
         Gym taruf1 = new Gym("Малий",5,125,30);
         Gym taruf2 = new Gym("Середній",13,250,30);
         Gym taruf3 = new Gym("Безліміт",100,500,30);
-        NonLogic.tru tr = new NonLogic.tru();
+
         Menu cafe = new Menu();
+
+        NonLogic.dva vol = new NonLogic.dva("Володя");
+        NonLogic.dva el = new NonLogic.dva("Елізавета");
+        NonLogic.tru rom = new NonLogic.tru("Роман Романович");
+
 
 
         System.out.println("⸻⸻⸻ Фітнес клуб Гачі ⸺⸻⸻⸻");
@@ -81,10 +86,9 @@ public class Main {
         System.out.println("");
         System.out.println();
 
-        tr.metraz();
-        System.out.println();
-        tr.mdva();
-        System.out.println();
-        tr.mettru();
+
+        vol.mdva();
+        el.mdva();
+        rom.mettru();
     }
 }
